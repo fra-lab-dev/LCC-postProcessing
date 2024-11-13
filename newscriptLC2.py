@@ -9,11 +9,11 @@ import psycopg2
 
 def get_db_connection():
     conn = psycopg2.connect(
-        host = "10.199.22.81"
-        port = 31000
-        database = "dbns_test"
-        user = "postgres"
-        password = "geosystems01"
+        host="localhost",
+        port=5432,  # Aggiungi il numero di porta qui
+        database="nome_database",
+        user="nome_utente",
+        password="password"
     )
     return conn
 
